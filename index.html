@@ -1,1 +1,51 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Logesh Irulappan — software developer building practical web, backend, Android, and automation projects.">
+  <title>Logesh Irulappan — Software Developer</title>
+  <style>
+    :root { --bg:#07111f; --panel:rgba(15,31,53,.72); --text:#edf6ff; --muted:#9db1c8; --accent:#62e6c5; --accent2:#79a9ff; --line:rgba(255,255,255,.12); }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--text); background:radial-gradient(circle at 15% 10%,#173866 0,transparent 32%),radial-gradient(circle at 85% 20%,#193451 0,transparent 28%),var(--bg); font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:inherit; text-decoration:none; } .wrap { width:min(1120px,92%); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:24px 0; } .brand { font-weight:800; letter-spacing:.05em; } .brand span { color:var(--accent); }
+    nav ul { display:flex; gap:24px; list-style:none; margin:0; padding:0; color:var(--muted); } nav a:hover { color:var(--accent); }
+    .hero { min-height:78vh; display:grid; align-items:center; grid-template-columns:1.15fr .85fr; gap:48px; padding:60px 0 90px; }
+    .eyebrow { color:var(--accent); letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; font-weight:700; } h1 { font-size:clamp(3rem,8vw,6.8rem); line-height:.95; margin:18px 0 26px; letter-spacing:-.07em; } h1 em { color:var(--accent); font-style:normal; } h2 { font-size:clamp(2rem,4vw,3.2rem); line-height:1; margin:0 0 18px; letter-spacing:-.04em; } p { color:var(--muted); max-width:650px; }
+    .actions { display:flex; flex-wrap:wrap; gap:14px; margin:32px 0; } .button { border:1px solid var(--line); border-radius:999px; padding:12px 19px; transition:.2s; } .button.primary { color:#06141a; background:var(--accent); border-color:var(--accent); font-weight:700; } .button:hover { transform:translateY(-2px); border-color:var(--accent); }
+    .orb { aspect-ratio:1; max-width:400px; margin:auto; border-radius:50%; display:grid; place-items:center; background:linear-gradient(135deg,rgba(98,230,197,.22),rgba(121,169,255,.12)); border:1px solid rgba(98,230,197,.35); box-shadow:0 0 90px rgba(98,230,197,.13), inset 0 0 60px rgba(121,169,255,.12); }
+    .orb-inner { width:72%; height:72%; border-radius:50%; display:grid; place-items:center; background:#091a2c; border:1px solid var(--line); text-align:center; } .orb strong { font-size:4.5rem; color:var(--accent); letter-spacing:-.1em; }
+    section { padding:86px 0; border-top:1px solid var(--line); } .section-head { display:flex; justify-content:space-between; gap:25px; align-items:end; margin-bottom:32px; } .section-head p { margin:0; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; } .card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:24px; backdrop-filter:blur(12px); } .card:hover { border-color:rgba(98,230,197,.55); transform:translateY(-3px); transition:.2s; } .card h3 { margin:0 0 8px; } .card p { font-size:.94rem; } .tag { display:inline-block; color:var(--accent); font-size:.75rem; margin-bottom:22px; text-transform:uppercase; letter-spacing:.08em; } .card-link { color:var(--accent2); font-size:.9rem; }
+    .stack { display:flex; flex-wrap:wrap; gap:10px; } .stack span { padding:10px 14px; border:1px solid var(--line); border-radius:999px; color:var(--muted); background:rgba(255,255,255,.04); }
+    footer { padding:32px 0 48px; color:var(--muted); display:flex; justify-content:space-between; gap:20px; } footer a { color:var(--accent); }
+    @media (max-width:760px) { nav ul { display:none; } .hero { grid-template-columns:1fr; padding-top:35px; } .orb { max-width:270px; } .cards { grid-template-columns:1fr; } .section-head { display:block; } footer { display:block; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="#top">LOGESH<span>.</span></a><ul><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <main id="top">
+      <section class="hero" style="border-top:0">
+        <div><div class="eyebrow">Software developer · builder · problem solver</div><h1>Building useful things for the <em>real world.</em></h1><p>I’m Logesh Irulappan, a developer who enjoys turning ideas into reliable web apps, backend services, Android experiences, and automation tools.</p><div class="actions"><a class="button primary" href="#work">Explore my work ↓</a><a class="button" href="https://github.com/Logesh-irulappan" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+        <div class="orb"><div class="orb-inner"><div><strong>LI</strong><br><span style="color:var(--muted)">curious by default</span></div></div></div>
+      </section>
+      <section id="work"><div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Projects with purpose.</h2></div><p>Some things I’ve explored across software, APIs, games, and productivity.</p></div>
+        <div class="cards">
+          <article class="card"><span class="tag">Full stack · EJS</span><h3>To-Do List Application</h3><p>A full-stack task manager with CRUD flows, PostgreSQL, Node.js, EJS, CSS, and JavaScript.</p><a class="card-link" href="https://github.com/Logesh-irulappan/To-Do-List-Application" target="_blank" rel="noreferrer">View repository ↗</a></article>
+          <article class="card"><span class="tag">Android</span><h3>Expense Tracker</h3><p>A mobile-first project focused on making personal expense tracking simple and accessible.</p><a class="card-link" href="https://github.com/Logesh-irulappan/expense-tracker-android-app" target="_blank" rel="noreferrer">View repository ↗</a></article>
+          <article class="card"><span class="tag">Java · backend</span><h3>Users RESTful API</h3><p>A backend exploration around user resources, API design, and clean service boundaries.</p><a class="card-link" href="https://github.com/Logesh-irulappan/users-restful-api" target="_blank" rel="noreferrer">View repository ↗</a></article>
+          <article class="card"><span class="tag">Kotlin · open source</span><h3>SWOT</h3><p>Helping identify academic email domains and automate education discount verification.</p><a class="card-link" href="https://github.com/Logesh-irulappan/swot" target="_blank" rel="noreferrer">View repository ↗</a></article>
+          <article class="card"><span class="tag">JavaScript</span><h3>Kahoot Clone</h3><p>An interactive quiz-game project exploring real-time participation and playful interfaces.</p><a class="card-link" href="https://github.com/Logesh-irulappan/Kahoot-clone" target="_blank" rel="noreferrer">View repository ↗</a></article>
+          <article class="card"><span class="tag">Web · Java</span><h3>Monopoly Web</h3><p>A board-game experience built through experiments in web application architecture and UI.</p><a class="card-link" href="https://github.com/Logesh-irulappan/monopoly-web" target="_blank" rel="noreferrer">View repository ↗</a></article>
+        </div>
+      </section>
+      <section id="about"><div class="section-head"><div><div class="eyebrow">The toolkit</div><h2>Always learning.<br>Always shipping.</h2></div><p>My GitHub reflects a hands-on path through software engineering: from interfaces and games to APIs, Android, databases, and automation.</p></div><div class="stack"><span>Java</span><span>JavaScript</span><span>Kotlin</span><span>Python</span><span>C</span><span>Node.js</span><span>PostgreSQL</span><span>REST APIs</span><span>Android</span><span>HTML & CSS</span></div></section>
+      <section id="contact"><div class="eyebrow">Let’s connect</div><h2>Have an idea?<br>Let’s make it real.</h2><p>Find me online, explore the code, or reach out for a collaboration.</p><div class="actions"><a class="button primary" href="mailto:logesh.irulappan@example.com">Start a conversation ↗</a><a class="button" href="https://www.linkedin.com/in/logesh-irulappan/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button" href="https://instagram.com/__lokii.__" target="_blank" rel="noreferrer">Instagram ↗</a></div></section>
+    </main>
+    <footer><span>© 2026 Logesh Irulappan</span><a href="https://github.com/Logesh-irulappan" target="_blank" rel="noreferrer">Built in public on GitHub ↗</a></footer>
+  </div>
+</body>
+</html>
